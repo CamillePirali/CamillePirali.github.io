@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Give me your money</title>
+</head>
+<body>
+    <div class="flex_page no-shadow">
+        <h1>Give It Up For Basil</h1>
+        <div class="intense_text">
+            Your generosity will contribute to Basil's happiness.
+        </div>
+        <div id="hidden" class="hidden">
+            BAHAHAHA YOU HAVE BEEN SCAMMED
+        </div>
+        <div class="scam_form">
+            <div>
+                <label for="moneyz">Amount you want to donate:</label>
+                <select id="moneyz" name="moneyz">
+                    <option>£500</option>
+                    <option>£1000</option>
+                    <option>£1500</option>
+                    <option>£2000</option>
+                    <option>£1,000,000</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="number">Card number:</label>
+                <input type="text" id="number" name="number">
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Donate" onclick="paid()">
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function paid(){
+        document.getElementById("hidden").style.display = 'block';
+    }
+</script>

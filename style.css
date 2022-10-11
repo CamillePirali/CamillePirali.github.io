@@ -1,1 +1,76 @@
 /* TODO: design your profile with CSS */
+body {
+    padding: 20px;
+}
+
+.flex_page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5%;
+}
+
+    .flex_page.no-shadow {
+        box-shadow: none;
+    }
+
+.profile {
+    max-width: 500px;
+    margin: 0px auto 0px auto;
+}
+
+.profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.intense_text {
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.scam_form {
+    margin: 5px;
+    padding: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.hidden {
+    display: none;
+    width: fit-content;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
